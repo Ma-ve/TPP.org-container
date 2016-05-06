@@ -1,6 +1,19 @@
 # TPPContainer
 
-1. Checkout this repo to /var/www/twitchplayspokemon
+## What I use to run it
+
+1. Apache 2.4
+2. >= PHP 5.6
+3. Apache modules:
+  3.1. mod_rewrite
+  3.2. mod_setenvif
+  3.3. mod_alias (?)
+
+I may have forgotten something, but please feel free to create a pull request to rectify any errors.
+
+## Stuff you came for  
+
+1. Checkout this repo to a directory available to the web server. `/var/www/twitchplayspokemon`
 2. Copy `config/config.php.sample` to `config/config.php`
 3. Adjust config values where necessary
 4. Create a `main/` directory
