@@ -1,0 +1,15 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^([a-z0-9]+)/(.*)?$ $1/$2 [E=VERSION:$1,NE,L]
+RewriteRule ^$ main/ [E=VERSION:main,NE,L]
+
+RewriteCond %{REQUEST_FILENAME} !(main)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ main/$1 [E=VERSION:main,NE,L]
+
+RewriteCond %{REQUEST_URI} (main)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* - [R=404,L,NC]
+
