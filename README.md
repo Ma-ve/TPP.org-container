@@ -5,9 +5,9 @@
 1. Apache 2.4
 2. >= PHP 5.6
 3. Apache modules:
-  3.1. mod_rewrite
-  3.2. mod_setenvif
-  3.3. mod_alias (?)
+..1. mod_rewrite
+..2. mod_setenvif
+..3. mod_alias (?)
 
 I may have forgotten something, but please feel free to create a pull request to rectify any errors.
 
