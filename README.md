@@ -8,6 +8,8 @@
   1. mod_rewrite
   2. mod_setenvif
   3. mod_alias (?)
+4. bin/bash
+5. [Composer](https://getcomposer.org/)
 
 I may have forgotten something, but please feel free to create a pull request to rectify any errors.
 
