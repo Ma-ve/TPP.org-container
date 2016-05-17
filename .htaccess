@@ -1,4 +1,8 @@
+Options -Indexes
+
 RewriteEngine on
+
+RewriteRule ^.*config.*$ - [R=404,L,NC]
 
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^([a-z0-9]+)/(.*)?$ $1/$2 [E=VERSION:$1,NE,L]
@@ -12,4 +16,3 @@ RewriteCond %{REQUEST_URI} (main)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule .* - [R=404,L,NC]
-
